@@ -1,4 +1,3 @@
 var myTasks = ["read", "look", "listen", "learn"];
 
-
-module.exports.info = myTasks;
+module.exports.info = tasks;

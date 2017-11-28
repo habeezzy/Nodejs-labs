@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Angularstyles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <div class="container" ng-controller="FormController as test">
+          <task-form></task-form>
+           <task-list></task-list>
+
+   </div>
+
+
+
+
+
+<!-- <div class="container" ng-controller="FormController as test">
+  <form>
+    <h1>TODO List</h1>
+    <p> A place to store the things you have to do!</p>
+     <input type="text" placeholder="Filter your to-dos"  ng-model="taskFilter">
+     <ol>
+       <li ng-repeat="task in test.newTask | filter: taskFilter track by $index" list-directive> {{ task }}<i class="material-icons" ng-click="test.removeTask($index)">&#xE5CD;</i> </li>
+     </ol>
+     <input type="text" placeholder="Add your to-do"  ng-model="test.add"><br>
+     <button ng-click="test.addTask(test.add)" button-directive>Add</button>
+  </form>
+</div> -->
+
+
+  <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="module.js"> </script>
+  <script src="controller.js"></script>
+  <script src="listDirective.js"></script>
+  <script src="buttonDirective.js"></script>
+  <script src="taskForm.js"></script>
+  <script src="taskList.js"></script>
+  </body>
+</html>

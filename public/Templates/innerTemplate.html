@@ -1,0 +1,7 @@
+<input ng-model="taskFilter" type="text" placeholder="Filter your to-dos">
+
+<ol>
+    <li  list-directive ng-repeat="task in $ctrl.newTask | filter: taskFilter track by $index">{{ task }}<i ng-click="$ctrl.removeTask()" class="material-icons">&#xE5CD;</i></li>
+</ol>
+<input ng-model="test.add" type="text" placeholder="Add your to-do">
+<button button-directive ng-click="$ctrl.addTask(add)">Add</button>
